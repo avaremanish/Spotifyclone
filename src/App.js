@@ -20,8 +20,12 @@ const [token , setToken ] = useState(null);
 
     if(_token){
 
-        setToken(_token)
-        spotify.setAccessToken 
+        setToken(_token);
+        spotify.setAccessToken(_token); 
+
+        spotify.getMe().then( (user) => {
+          console.log("I have the token", user);
+        });
     }
     console.log("i have a token ", token);
   }, []); 
