@@ -12,12 +12,12 @@ const reducer =(state, action)=>{
     // Action  => type, payload[]
 
     switch(action.type){
-        case "SET_USER"; 
+        case "SET_USER":
             return {
                  ...state,
                  user: action.user       
                 }
-                default;
+                default:
                 return state;
             }
 }

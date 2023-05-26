@@ -27,7 +27,7 @@ const [token , setToken ] = useState(null);
           console.log("I have the token", user);
         });
     }
-    console.log("i have a token ", token);
+    console.log("i have a token ", _token);
   }, []); 
   return (
     <div className="app">
